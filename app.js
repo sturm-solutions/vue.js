@@ -10,14 +10,14 @@ var app2 = new Vue({
     data: {
         message: 'You loaded this page on ' + new Date().toLocaleString()
     }
-});
+})
 
 var app3 = new Vue({
     el: '#app-3',
     data: {
         seen: true
     }
-});
+})
 
 var app4 = new Vue({
     el: '#app-4',
@@ -28,7 +28,7 @@ var app4 = new Vue({
             { text: 'Build something awesome' }
         ]
     }
-});
+})
 
 var app5 = new Vue({
     el: '#app-5',
@@ -40,14 +40,14 @@ var app5 = new Vue({
             this.message = this.message.split('').reverse().join('')
         }
     }
-});
+})
 
 var app6 = new Vue({
     el: '#app-6',
     data: {
         message: 'Hello Vue!'
     }
-});
+})
 
 Vue.component('todo-item', {
     // The todo-item component now accepts a
@@ -55,7 +55,7 @@ Vue.component('todo-item', {
     // This prop is called todo.
     props: ['todo'],
     template: '<li>{{ todo.text }}</li>'
-});
+})
 
 var app7 = new Vue({
     el: '#app-7',
@@ -66,4 +66,4 @@ var app7 = new Vue({
             { id: 2, text: 'Whatever else humans are supposed to eat' }
         ]
     }
-});
+})

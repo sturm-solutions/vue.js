@@ -39,7 +39,7 @@ var demo = new Vue({
             xhr.open('GET', apiURL + that.currentBranch)
             xhr.onload = function () {
                 that.commits = JSON.parse(xhr.responseText)
-                console.log(that.commits[0].html_url)
+                console.log(that.commits)
             }
             xhr.send()
         }
